@@ -1,0 +1,31 @@
+#main-content {
+  padding: em(120) 0;
+
+  article {
+    @include span-columns(8);
+    @include shift(2);
+    margin-bottom: em(60);
+
+    h2 {
+      font-size: em(24);
+      float: left;
+    }
+
+    header {
+      @include clearfix;
+      margin-bottom: $base-line-height;
+
+      span {
+        color: $medium-gray;
+        float: right;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5em;
+    }
+  }
+}

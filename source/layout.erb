@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+
+    <title>I'm Andrew Cohen<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+
+    <%= stylesheet_link_tag "application", "all" %>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <%= javascript_include_tag  "all" %>
+
+    <script type="text/javascript" src="//use.typekit.net/qgr6vei.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body class="<%= page_classes %>">
+
+    <header id="main-header">
+      <div class="row">
+        <h1><a href="/">I'm Andrew Cohen</a></h1>
+        <nav id="main-nav">
+          <ul>
+            <li><a href="http://twitter.com/andrewcohen" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://dribbble.com/andrewcohen" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="http://instagram.com/imandrewcohen" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="http://linkedin.com/in/imandrewcohen" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="banner">
+      <div class="row">
+        <h2>Product Designer at thoughtbot<span>Co-organizer of Refresh Denver</span></h2>
+      </div>
+    </section>
+
+    <section id="main-content" role="main">
+      <div class="row">
+        <%= yield %>
+      </div>
+    </section>
+
+    <footer id="main-footer">
+      <div class="row">
+        <ul>
+          <li><a href="http://twitter.com/andrewcohen" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="http://dribbble.com/andrewcohen" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+          <li><a href="http://instagram.com/imandrewcohen" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="http://linkedin.com/in/imandrewcohen" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+        &copy; 2014 Andrew Cohen
+      </div>
+    </footer>
+  </body>
+</html>

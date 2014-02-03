@@ -1,0 +1,6 @@
+name: I'm Andrew Cohen
+markdown: redcarpet
+pygments: true
+
+ gems: [bourbon, neat, bitters, haml]
+ # This will require each of these gems automatically.
