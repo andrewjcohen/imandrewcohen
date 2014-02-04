@@ -6,18 +6,18 @@ per_page: 10
   <article>
     <header>
       <h2><%= link_to article.title, article %></h2>
+      <h3><%= article.date.strftime('%b %e, %Y') %></h3>
     </header>
     <!-- use article.summary(250) if you have Nokogiri available to show just
          the first 250 characters -->
     <%= article.body %>
 
     <footer>
-      <span><%= article.date.strftime('%b %e, %Y') %></span>
-      <% if article.tags %> //
+      <ul>
         <% article.tags.each do |tag| %>
-          #<%= tag %>
+          <li>#<%= tag %></li>
         <% end %>
-      <% end %>
+      </ul>
     </footer>
   </article>
 <% end %>

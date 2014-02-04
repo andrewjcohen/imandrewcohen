@@ -1,25 +1,28 @@
 #main-content {
-  padding: em(120) 0;
+  padding: em(60) 0;
 
   article {
     @include span-columns(8);
     @include shift(2);
-    margin-bottom: em(60);
+    margin-bottom: em(120);
+
+    header {
+      @include clearfix;
+      margin-bottom: $base-line-height;
+      text-align: center;
+    }
 
     h2 {
       font-size: em(24);
       margin-bottom: $base-line-height / 4;
     }
 
-    header {
-      @include clearfix;
-      margin-bottom: $base-line-height;
-
-      span {
-        color: $medium-gray;
-        font-size: 16px;
-        text-transform: uppercase;
-      }
+    h3 {
+      color: $medium-gray;
+      font-size: em(21);
+      font-family: $serif;
+      font-weight: normal;
+      margin-bottom: $base-line-height / 2;
     }
 
     p {
@@ -34,6 +37,19 @@
       font-style: italic;
       line-height: 1.25em;
       margin-bottom: $base-line-height / 2;
+    }
+
+    footer {
+      border-top: solid 1px #e5e5e5;
+      color: $medium-gray;
+      padding-top: $base-line-height / 2;
+
+      ul {
+        li {
+          display: inline;
+          margin-right: em(5);
+        }
+      }
     }
   }
 }

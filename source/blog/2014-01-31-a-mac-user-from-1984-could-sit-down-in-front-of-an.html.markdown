@@ -8,4 +8,4 @@ A Mac user from 1984 could sit down in front of an iMac or MacBook today and rec
 </q>
 </div>
 
--- <a href="http://daringfireball.net/2014/01/special">Daring Fireball: Special</a>
+-- <p><a href="http://daringfireball.net/2014/01/special">Daring Fireball: Special</a></p>
