@@ -34,7 +34,7 @@
     <link rel="alternate" href="http://blog.url.com/journal/Prototyping-Animations-in-Keynote/"/>
     <id>http://blog.url.com/journal/Prototyping-Animations-in-Keynote/</id>
     <published>2014-10-13T00:00:00Z</published>
-    <updated>2014-10-14T23:51:08-06:00</updated>
+    <updated>2014-10-14T23:58:11-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -46,7 +46,7 @@
 
 &lt;p&gt;This brings me to my new favorite animation program, Keynote. Yes Keynote, the prettier Apple version of PowerPoint. Keynote has been spoken about in the past as a great tool for creating wireframes and prototypes, but not much for animation. I love Keynote because it’s fast, free, easy to learn, and it works.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ohh Pretty" src="assets/images/10-13-Prototyping-Animations-in-Keynote/system-select.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ohh Pretty" src="http://images.thoughtbot.com/animating-in-keynote/system-select.gif" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Recently Andrew Haskin of Frog Design recreated &lt;a href="http://designmind.frogdesign.com/blog/google-s-material-design-video-recreated-in-keynote.html"&gt;Google’s Material Design Video in Keynote&lt;/a&gt;. I was impressed with his ability to recreate complex animations in what seemed like a very simple program. Using his Keynote file as a guideline, I dug in to the mechanics and mastered animating in Keynote in roughly an hour.&lt;/p&gt;
 
@@ -64,7 +64,7 @@
 &lt;li&gt;Fire up Keynote and create a blank slideshow.&lt;/li&gt;
 &lt;li&gt;In the top right, select the document tab and change your slide size to the appropriate canvas necessary.&lt;/li&gt;
 &lt;li&gt;Change your presentation type to be self-playing and remove the delays on transitions and builds. This will make sure everything flows seamlessly between slides.
-&lt;img alt="Document Tab" src="assets/images/10-13-Prototyping-Animations-in-Keynote/document-tab.png" /&gt;&lt;/li&gt;
+&lt;img alt="Document Tab" src="http://images.thoughtbot.com/animating-in-keynote/document-tab.png" /&gt;&lt;/li&gt;
 &lt;li&gt;After that, make sure the Build Order palette is open, which can be found at view &amp;gt; show build order. Alongside the Animate palette, the build order palette is where you’ll spend the bulk of your time.&lt;/li&gt;
 &lt;li&gt;Hold on one second, though! Before you can animate, you need to export your assets from your program of choice. Anything that you plan to move around independently of other objects needs to be a slice. Keep in mind that sometimes it is easier to build your element inside of Keynote.&lt;/li&gt;
 &lt;li&gt;Once you have your assets, drag them into Keynote and rebuild your layout.&lt;/li&gt;
@@ -76,10 +76,10 @@
 
 &lt;ol&gt;
 &lt;li&gt;Select the first object you want animated and head to the Animate palette in the top right. Keynote was created for slideshows, so the palette will reflect that with three options. When hunting down a specific effect, I find it helps to think of my animation as three key steps: building in (fade in), do something (action), building out (fade out).
-&lt;img alt="Animate Tab" src="assets/images/10-13-Prototyping-Animations-in-Keynote/animate-tab.png" /&gt;&lt;/li&gt;
+&lt;img alt="Animate Tab" src="http://images.thoughtbot.com/animating-in-keynote/animate-tab.png" /&gt;&lt;/li&gt;
 &lt;li&gt;Select Add an Effect and find the desired animation you’re looking for. Tweak your effect by selecting the duration you want, the acceleration, and other options. Once done, click add effect.&lt;/li&gt;
 &lt;li&gt;The effect shows up in your build order palette, which is the order animations are triggered at.
-&lt;img alt="Build Order" src="assets/images/10-13-Prototyping-Animations-in-Keynote/build-order.png" /&gt;&lt;/li&gt;
+&lt;img alt="Build Order" src="http://images.thoughtbot.com/animating-in-keynote/build-order.png" /&gt;&lt;/li&gt;
 &lt;li&gt;Select an effect in the build order palette. You can make it so the effect triggers at the same time or after the one before it. This allows you to chain together multiple animations in one slide. If you want something a little more drastic, let’s talk Magic Move.&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -90,7 +90,7 @@
 &lt;ol&gt;
 &lt;li&gt;Take the slide you currently have and duplicate it. One of the slides will exist as the first state and the second as the final state. You want to make sure the objects you want to change exist in both slides.&lt;/li&gt;
 &lt;li&gt;Go back to the first slide, select the animate tab, click add a transition, and select magic move.
-&lt;img alt="Magic Move" src="assets/images/10-13-Prototyping-Animations-in-Keynote/magic-move.png" /&gt;&lt;/li&gt;
+&lt;img alt="Magic Move" src="http://images.thoughtbot.com/animating-in-keynote/magic-move.png" /&gt;&lt;/li&gt;
 &lt;li&gt;Change the properties as you see fit, but leave “Move by object” as is. Also, make sure start transition automatically is selected.&lt;/li&gt;
 &lt;li&gt;Now go to the second slide and move your objects around as you see fit. If you want something to fade in, (inserted comma) change the opacity from 0 to 100. If you want it to move, change the position to where you want it to end up. Magic move will take care of the rest.&lt;/li&gt;
 &lt;li&gt;Preview your animation by selecting Preview on the first slide in the Animate tab.&lt;/li&gt;
