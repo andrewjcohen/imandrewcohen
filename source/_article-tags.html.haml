@@ -1,0 +1,7 @@
+%span.blog-post-tags
+  %i.icon-tag
+  Filed in:
+  %ul
+    - article.data['tags'].split(',').each do |tag|
+      %li
+        = link_to tag, tag_path(tag)

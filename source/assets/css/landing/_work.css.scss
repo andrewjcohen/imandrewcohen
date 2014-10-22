@@ -1,0 +1,98 @@
+#work {
+  @include animation(slideUp .7s .35s backwards);
+  background-color: white;
+  padding: em(60) 0;
+
+  @include media($medium-screen-up) {
+    padding: em(120) 0;
+  }
+}
+
+.work-header {
+  @include clearfix;
+  @include fill-parent;
+  margin-bottom: $base-y * 1.5;
+
+  h3 {
+    float: left;
+  }
+
+  a {
+    @extend button;
+    display: none;
+
+    @include media($medium-screen-up) {
+      display: inline-block;
+      float: right;
+    }
+  }
+}
+
+.project {
+  @extend .card;
+  @include fill-parent;
+  @include transition($animation-ease-out);
+  height: em(300);
+  padding: 0;
+  margin-bottom: $base-y;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    box-shadow: $shadow-2;
+
+    a {
+      background-color: rgba(black, 0.5);
+
+      h3, span {
+        opacity: 1;
+      }
+    }
+  }
+
+  @include media($medium-screen-up) {
+    @include span-columns(2.6 of 8);
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(4 of 12);
+  }
+
+  a {
+    @include backface-visibility(hidden);
+    @include size(100%);
+    background-color: rgba(black, 0);
+    border-radius: $base-border-radius;
+    border-bottom: none;
+    display: inline-block;
+
+    h3,
+    span {
+      @include transition($animation-ease-out);
+      color: white;
+      opacity: 0;
+    }
+  }
+}
+
+.project-title {
+  @include vertical-align;
+  text-align: center;
+}
+
+#tb {
+  background: image-url('landing/landing-tb.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#nbs {
+  background: image-url('landing/landing-nbs.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#pcp {
+  background: image-url('landing/landing-pcp.jpg') no-repeat center;
+  background-size: cover;
+}

@@ -1,0 +1,23 @@
+---
+layout: layout
+pageable: true
+per_page: 50
+---
+
+%header.page-header
+  .wrap
+    %h2 Journal
+    %p Viewing articles related to #{tagname}
+
+.wrap
+  %section.blog-articles
+    - page_articles.each do |article|
+      %article.blog-post
+        %span.blog-post-date
+          = article.date.strftime('%b %e')
+        %h3
+          = link_to article do
+            = article.title
+        %section.blog-summary
+          = article.summary
+

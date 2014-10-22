@@ -1,0 +1,25 @@
+%header.main-header
+  .wrap
+    .logo
+      %h1
+        = link_to '/' do
+          I'm Andrew Cohen
+    %nav.main-nav
+      .mobile-nav-trigger
+        .hamburgers
+      %ul.main-nav-menu
+        %li
+          = link_to '/#work' do
+            Work
+        %li
+          = link_to '/journal/' do
+            Journal
+        %li
+          = link_to 'http://photos.imandrewcohen.com' do
+            Photos
+        %li
+          %a(href="javascript:window.location.href = 'mailto:' + ['hi','imandrewcohen.com'].join('@')")
+            Contact Me
+
+
+

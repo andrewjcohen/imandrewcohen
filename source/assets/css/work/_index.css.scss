@@ -1,0 +1,113 @@
+$projects: (thoughtbot, nextbigsound, pilsnercohenparty);
+
+@each $project in $projects {
+  .#{$project} {
+    color: white;
+
+    .wrap {
+      position: relative;
+    }
+
+    @if $project == 'thoughtbot' {
+      background-color: $tb-red;
+    }
+
+    @if $project == 'nextbigsound' {
+      background-color: $nbs-red;
+    }
+
+    @if $project == 'pilsnercohenparty' {
+      background-color: $apac-teal;
+    }
+  }
+}
+
+.header-content {
+  @include span-columns(12);
+  text-align: center;
+  padding: em(60) 0;
+  position: relative;
+
+  h1 {
+    color: white;
+    font-size: em(36);
+    text-transform: uppercase;
+
+    @include media($medium-screen-up) {
+      font-size: em(48);
+    }
+  }
+}
+
+.project-nav {
+  @include transition(all linear 0.2s);
+  border-bottom: none;
+  color: white;
+  font-size: em(12);
+  font-weight: bold;
+  font-family: $header-font-family;
+  text-transform: uppercase;
+  opacity: 0.5;
+
+  i {
+    @include position(relative, 6px auto auto auto);
+    font-size: em(24, 12);
+  }
+
+  &:hover {
+    border-bottom: none;
+    color: white;
+    opacity: 1.0;
+  }
+}
+
+.next {
+  @extend .project-nav;
+  @include position(absolute, auto 0px $base-y auto);
+
+  @include media($large-screen-up) {
+    bottom: 50%;
+  }
+}
+
+.prev {
+  @extend .project-nav;
+  @include position(absolute, auto auto $base-y 0px);
+
+  @include media($large-screen-up) {
+    bottom: 50%;
+  }
+}
+
+.copy {
+  @include clearfix;
+  @include fill-parent;
+  padding: em(60) 0;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(8);
+    @include shift(2);
+  }
+}
+
+.image-wrap {
+  @include fill-parent;
+  @include clearfix;
+  clear: both;
+  margin-bottom: $base-y * 2;
+  overflow: hidden;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+  }
+
+  @include media($medium-screen-up) {
+    margin-bottom: $base-y * 4;
+  }
+}
+

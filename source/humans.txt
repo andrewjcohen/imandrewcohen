@@ -1,0 +1,10 @@
+/* TEAM */
+Builder: Andrew Cohen
+Site: hi@imandrewcohen.com
+Twitter: @andrewcohen
+Location: Denver, CO
+
+/* SITE */
+Standards: HTML5, CSS3,..
+Components: Modernizr, jQuery, SASS, Bourbon, Neat, Bitters, Middleman
+Software: Middleman, Github

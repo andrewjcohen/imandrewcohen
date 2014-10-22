@@ -1,0 +1,62 @@
+// Typography
+///////////////////////////////////////////////////////////////////////////////
+$sans-serif: 'soleil', $helvetica;
+$serif: 'chaparral-pro', $georgia;
+
+$base-font-family: $serif;
+$header-font-family: $sans-serif;
+
+// Sizes
+///////////////////////////////////////////////////////////////////////////////
+$base-font-size: 1em;
+$base-line-height: $base-font-size * 1.5;
+$base-border-radius: em(4);
+$base-y: 24px;
+
+// Colors
+///////////////////////////////////////////////////////////////////////////////
+$im-teal: #4ECDC4;
+$im-blue: #4BC6E4;
+$im-purple: #556270;
+$almost-white: #F2F5F8;
+$tb-red: #B72B2B;
+$nbs-red: #B31E26;
+$apac-teal: #4BE6C7;
+
+$blue: #477DCA;
+$dark-gray: #333;
+$medium-gray: #666;
+$light-gray: #DDD;
+$light-red: #FBE3E4;
+$light-yellow: #FFF6BF;
+$light-green: #E6EFC2;
+
+// Body Color
+$base-body-color: $almost-white;
+
+//  Font Colors
+$base-font-color: $dark-gray;
+$base-accent-color: $im-purple;
+
+//  Text Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+
+// Border color
+$base-border-color: $light-gray;
+
+// Flash Colors
+$error-color: $light-red;
+$notice-color: $light-yellow;
+$success-color: $light-green;
+
+// Shadows
+///////////////////////////////////////////////////////////////////////////////
+$shadow-1: 0 1px 1.5px rgba(black, 0.12), 0 1px 1px rgba(black, 0.24);
+$shadow-2: 0 3px 3px rgba(black, 0.16), 0 3px 3px rgba(black, 0.23);
+$shadow-3: 0 10px 10px rgba(black, 0.19), 0 6px 3px rgba(black, 0.23);
+
+// Animations
+///////////////////////////////////////////////////////////////////////////////
+$animation-ease-out: all ease-out 0.2s;
+

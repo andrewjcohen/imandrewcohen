@@ -1,0 +1,24 @@
+%header.page-header
+  .wrap
+    %h2
+      = article.title
+    %p
+      = article.date.strftime('%b %e, %Y')
+
+.wrap
+  %section.blog-articles
+    %article.blog-post
+      %section
+        = article.render(layout: false)
+        - if article.data['tags'].present?
+          %span.blog-post-tags
+            %i.icon-tag
+            Filed in:
+            %ul
+              - article.tags.each do |tag|
+                %li
+                  = link_to tag, tag_path(tag)
+
+      %footer
+        %span.blog-post-feedback
+          Question, comment, feedback? <a href="https://twitter.com/andrewcohen">Tweet Me</a>

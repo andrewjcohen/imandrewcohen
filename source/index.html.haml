@@ -1,0 +1,48 @@
+%header.landing-header
+  .color-overlay
+  .wrap
+    %h2 Product Designer at thoughtbot
+    %p Husband, cyclist, outdoorsman, Arsenal FC fan, and burrito connoisseur.
+
+%section.landing-content
+  .wrap
+    .about
+      %h3 About Me
+      %p I'm a traditionally-trained designer with over seven years of web, mobile, and product design experience. I've won ADDY awards in Washington DC, ran my own independent design studio, and most recently was Lead Designer at Next Big Sound. Currently I'm a Product Designer at thoughtbot in Denver.
+
+      %h4 Selected Clients
+      %p Brazeen Careerist, Microsoft, Pfizer, Realtor.com, The New Republic, US National Guard, US Army, Verizon Wireless
+
+    - blog.articles[0...2].each do |article|
+      %article.blog-post-summary
+        = link_to article do
+          %span.blog-post-date
+            = article.date.strftime('%b %e')
+          %h3
+            = article.title
+          = article.summary(165, '...')
+
+%section#work
+  .wrap
+    %header.work-header
+      %h3 Selected Work
+      %a(href='http://dribbble.com/andrewcohen')
+        View More Work on Dribbble
+
+    .project#tb
+      %a(href='work/thoughtbot')
+        .project-title
+          %h3 thoughtbot
+          %span View Project
+
+    .project#nbs
+      %a(href='work/nextbigsound')
+        .project-title
+          %h3 Next Big Sound
+          %span View Project
+
+    .project#pcp
+      %a(href='work/pilsnercohenparty')
+        .project-title
+          %h3 Pilsner Cohen Party
+          %span View Project

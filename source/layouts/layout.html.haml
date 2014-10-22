@@ -1,0 +1,40 @@
+!!! 5
+%html
+  %head
+    %meta(charset='utf-8')
+    %meta(content='IE=edge,chrome=1' http-equiv='X-UA-Compatible')
+    - if current_page.data['title'].present?
+      %title
+        = current_page.data['title']
+        – I'm Andrew Cohen
+    - else
+      %title I'm Andrew Cohen – Product Designer
+    %meta(name='description' content='Im Andrew Cohen a traditionally-trained designer with over seven years of web, mobile, and product design experience.')
+    %meta(name='viewport' content='width=device-width,initial-scale=1')
+    %link(rel='author' href='humans.txt')
+    %link(rel='favicon' href='favicon.ico')
+    = stylesheet_link_tag 'application'
+    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
+    %script(src='//use.typekit.net/kew0xem.js')
+    :javascript
+      try{Typekit.load();}catch(e){}
+
+  %body
+    = partial 'partials/header'
+
+    %section#main
+      = yield
+
+    = partial 'partials/footer'
+
+    %script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    = javascript_include_tag 'main'
+
+    :javascript
+      var _gaq=[['_setAccount','UA-27925117-2'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+
+    :javascript
+      window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));

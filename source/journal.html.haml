@@ -1,0 +1,23 @@
+---
+pageable: true
+per_page: 50
+title: Journal
+---
+
+%header.page-header
+  .wrap
+    %h2 Journal
+    %p Ramblings on design, cycling, life, and more
+
+.wrap
+  %section.blog-articles
+    - page_articles.each do |article|
+      %article.blog-post
+        %span.blog-post-date
+          = article.date.strftime('%b %e')
+        %h3
+          = link_to article do
+            = article.title
+        %section.blog-summary
+          = article.summary
+

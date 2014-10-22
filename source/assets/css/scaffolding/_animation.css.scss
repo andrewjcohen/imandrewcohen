@@ -1,0 +1,35 @@
+@include keyframes(slideRight) {
+  0% {
+    @include transform(translateX(-30px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateX(0px));
+    opacity: 1;
+  }
+}
+
+@include keyframes(slideUp) {
+  0% {
+    @include transform(translateY(30px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateY(0px));
+    opacity: 1;
+  }
+}
+
+@include keyframes(slideDown) {
+  0% {
+    @include transform(translateY(-30px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateY(0px));
+    opacity: 1;
+  }
+}

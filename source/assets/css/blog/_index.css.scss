@@ -1,0 +1,127 @@
+.blog-articles {
+  @include animation(slideUp .7s .7s backwards);
+  padding: em(60) 0;
+}
+
+.blog-post {
+  @include fill-parent;
+  margin-bottom: $base-y * 2;
+
+  @include media($large-screen-up) {
+    @include span-columns(8 of 12)
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  ol {
+    list-style-type: decimal;
+    margin-bottom: $base-y;
+
+    li {
+      font-size: em(18);
+      line-height: 1.5em;
+      margin-left: em(24, 18);
+    }
+  }
+
+  img {
+    margin: ($base-y * 2) auto;
+    max-width: 100%;
+  }
+
+  footer {
+    @include fill-parent;
+    border-top: solid 1px $light-gray;
+    margin-top: $base-y;
+    padding-top: $base-y;
+  }
+}
+
+.blog-summary {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.blog-post-tags {
+  color: $medium-gray;
+
+  @include media($medium-screen-up) {
+    font-size: $base-font-size * 1.125;
+  }
+
+  i {
+    @include position(relative, 3px null null null);
+    font-size: em(20);
+
+    @include media($medium-screen-up) {
+      font-size: em(20, 18);
+    }
+  }
+
+  ul {
+    display: inline-block;
+
+    li {
+      display: inline-block;
+      @include position(relative, null null null -4px);
+
+      &:after {
+        @include position(relative, null null null -4px);
+        content: ',';
+      }
+
+      &:first-of-type {
+        left: 0;
+      }
+
+      &:last-of-type {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.blog-post-feedback {
+  font-family: $sans-serif;
+}
+
+.blog-post-date {
+  color: lighten($im-purple, 20);
+  font-family: $header-font-family;
+  text-transform: uppercase;
+}
+
+.tags {
+  color: rgba(black, .4);
+  font-size: $base-font-size * 1.125;
+  margin-top: $base-y * 2;
+
+  i {
+    @include position(relative, 7px null null null);
+    font-size: em(30);
+  }
+
+  ul {
+    display: inline-block;
+  }
+
+  li {
+    display: inline-block;
+
+    &:after {
+      content: ',';
+      @include position(relative, null null null -2px);
+    }
+
+    &:last-of-type {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

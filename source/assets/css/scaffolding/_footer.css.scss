@@ -1,0 +1,41 @@
+.main-footer {
+  background-color: $almost-white;
+  clear: both;
+  text-align: center;
+  padding: em(60) 0;
+}
+
+.footer-content {
+  @include fill-parent;
+
+  @include media($large-screen-up) {
+    @include span-columns(4);
+    @include shift(4);
+  }
+}
+
+.social-nav {
+  @include fill-parent;
+  text-align: center;
+
+  li {
+    display: inline-block;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    border-bottom: none;
+    font-size: em(36);
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}
+
+.copyright {
+  @include fill-parent;
+}

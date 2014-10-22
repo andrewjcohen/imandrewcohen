@@ -1,0 +1,97 @@
+.landing-header {
+  @extend .page-header;
+  background: image-url('landing/bg-banner.jpg') no-repeat center right $im-purple;
+  background-size: cover;
+  position: relative;
+}
+
+.color-overlay {
+  @include position(absolute, 0px 0px 0px 0px);
+  background-color: rgba($im-purple, .8);
+}
+
+.landing-content {
+  @include animation(slideUp .7s .7s backwards);
+  padding: em(60) 0;
+
+  @include media($medium-screen-up) {
+    padding: em(120) 0;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: $base-border-radius;
+  padding: flex-gutter(4);
+
+  @include media($medium-screen-up) {
+    padding: flex-gutter(8);
+  }
+
+  @include media($large-screen-up) {
+    padding: flex-gutter(12);
+  }
+}
+
+.about {
+  @extend .card;
+  @include fill-parent;
+  margin-bottom: $base-y;
+
+  @include media($large-screen-up) {
+    @include span-columns(6 of 12);
+    margin-bottom: 0;
+  }
+
+  h3, h4 {
+    margin-bottom: $base-y / 2;
+  }
+
+  h4 {
+    font-size: $base-font-size * 1.25;
+  }
+
+  p:last-of-type {
+    margin-bottom: em(4);
+  }
+}
+
+.blog-post-summary {
+  @include fill-parent;
+
+  &:first-of-type {
+    margin-bottom: $base-y;
+
+    @include media($large-screen-up) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include media($medium-screen-up) {
+    @include span-columns(4 of 8);
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(3 of 12);
+  }
+
+  a {
+    @extend .card;
+    @include size(100%);
+    border-bottom: none;
+    display: inline-block;
+    padding: flex-gutter(4);
+
+    &:hover {
+      box-shadow: $shadow-2;
+    }
+
+    @include media($large-screen-up) {
+      padding: flex-gutter(3);
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
