@@ -1,11 +1,6 @@
 .blog-articles {
-  @include animation(slideUp .5s .25s backwards);
-  @include clearfix;
-  padding: em(60) 0 0;
-
-  @include media($large-screen-up) {
-    padding: em(120) 0 em(60);
-  }
+  @include animation(slideUp .7s .7s backwards);
+  padding: em(60) 0;
 }
 
 .blog-post {
@@ -13,22 +8,11 @@
   margin-bottom: $base-y * 2;
 
   @include media($large-screen-up) {
-    @include span-columns(8 of 12);
+    @include span-columns(8 of 12)
   }
 
   &:last-of-type {
     margin-bottom: 0;
-  }
-
-  p,
-  ol,
-  ul {
-    font-size: $base-font-size * 1.125;
-
-    @include media($medium-screen-up) {
-      font-size: $base-font-size * 1.25;
-      line-height: 1.5em;
-    }
   }
 
   ol {
@@ -36,15 +20,8 @@
     margin-bottom: $base-y;
 
     li {
-      margin-left: em(24, 18);
-    }
-  }
-
-  ul {
-    list-style-type: disc;
-    margin-bottom: $base-y;
-
-    li {
+      font-size: em(18);
+      line-height: 1.5em;
       margin-left: em(24, 18);
     }
   }
@@ -70,7 +47,6 @@
 
 .blog-post-tags {
   color: $medium-gray;
-  font-size: $base-font-size;
 
   @include media($medium-screen-up) {
     font-size: $base-font-size * 1.125;
@@ -87,12 +63,10 @@
 
   ul {
     display: inline-block;
-    font-size: $base-font-size;
 
     li {
-      @include position(relative, null null null -4px);
       display: inline-block;
-      margin-left: 0;
+      @include position(relative, null null null -4px);
 
       &:after {
         @include position(relative, null null null -4px);
@@ -103,8 +77,10 @@
         left: 0;
       }
 
-      &:last-of-type:after {
-        display: none;
+      &:last-of-type {
+        &:after {
+          display: none;
+        }
       }
     }
   }
