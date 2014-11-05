@@ -6,10 +6,12 @@
       = article.date.strftime('%b %e, %Y')
 
 .wrap
-  %section.blog-articles
+  %section.blog-article
     %article.blog-post
       %section
         = article.render(layout: false)
+    /
+      %footer
         - if article.data['tags'].present?
           %span.blog-post-tags
             %i.icon-tag
@@ -19,6 +21,12 @@
                 %li
                   = link_to tag, tag_path(tag)
 
-      %footer
-        %span.blog-post-feedback
-          Question, comment, feedback? <a href="https://twitter.com/andrewcohen">Tweet Me</a>
+    %footer.blog-footer
+      .blog-footer-about
+        %h4 Andrew Cohen
+        %p Husband, cyclist, Product Designer at <a href="http://thoughtbot.com">thoughtbot</a>, co-organizer of <a href="http://refreshdenver.org">Refresh Denver</a>, outdoorsman, Arsenal FC fan, and burrito connoisseur.
+
+      .blog-post-feedback
+        %h4 Questions or comments?
+        %a(href="https://twitter.com/andrewcohen")Tweet Me
+        %a(href="javascript:window.location.href = 'mailto:' + ['hi','imandrewcohen.com'].join('@')") Email Me

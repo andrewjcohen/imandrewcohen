@@ -30,6 +30,7 @@ body {
     padding-bottom: em(60);
     padding-top: em(60);
     position: relative;
+    text-align: center;
 
     @include media($medium-screen-up) {
       padding-bottom: em(120);
