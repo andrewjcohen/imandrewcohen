@@ -13,6 +13,19 @@
   @include media($large-screen-up) {
     padding: em(120) 0 em(60);
   }
+
+  .blog-post {
+    border-bottom: solid 1px $light-gray;
+    padding-bottom: $base-y * 2;
+
+    h3 a {
+      border-bottom: none;
+
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
 }
 
 .blog-article {
@@ -86,7 +99,7 @@
 
 .blog-summary {
   p {
-    margin-bottom: 0;
+    margin-bottom: $base-y / 2;
   }
 }
 
