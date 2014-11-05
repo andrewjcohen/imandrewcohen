@@ -5,10 +5,62 @@
   <id>http://blog.url.com/journal</id>
   <link href="http://blog.url.com/journal"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2014-10-14T00:00:00Z</updated>
+  <updated>2014-11-05T00:00:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Everyone Has Something to Teach Others</title>
+    <link rel="alternate" href="http://blog.url.com/journal/Everyone-Has-Something-to-Teach-Others/"/>
+    <id>http://blog.url.com/journal/Everyone-Has-Something-to-Teach-Others/</id>
+    <published>2014-11-05T00:00:00Z</published>
+    <updated>2014-11-05T11:13:07-07:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;We live in a fantastic time. With the internet we’re able to learn about anything that interests us. Our insatiable thirst for knowledge can be quenched, and entire career paths can shift through online learning. When it comes to internet workers we’re a group that has to stay on top of the latest and greatest. If not we can quickly become obsolete. We are always looking to learn, but who is always looking to teach others?&lt;/p&gt;
+
+&lt;h2&gt;7 Years of Learning&lt;/h2&gt;
+
+&lt;p&gt;I’m roughly 7 years into my career. In the design and development world that’s a long time. In my mind I’m a novice with so much to learn. In the minds of others I’m an expert with so much to teach. &lt;/p&gt;
+
+&lt;p&gt;I’ve thought of myself as someone that has a lot to learn, but not a lot to teach. Whether it was blogging, lecturing, speaking, or just mentoring, I was afraid I didn’t have anything special to offer. My knowledge of design has always felt lacking in comparison to other thought-leaders.&lt;/p&gt;
+
+&lt;p&gt;As someone that has spent most of his career learning from others I’ve struggled to see what I could offer up. How many times can someone talk about grids, typography, and processes? According to most posts I see out there a lot. Still I wasn’t sure what I could bring to the table.&lt;/p&gt;
+
+&lt;h2&gt;7 Years of Expertise&lt;/h2&gt;
+
+&lt;p&gt;While attending Brooklyn Beta I chatted with &lt;a href="https://twitter.com/fehler"&gt;Christopher Murphy&lt;/a&gt; about teaching and educating others. I mentioned how I’ve always wanted to teach, but never felt I had the expertise. Christopher told me how my 7 years of experience was 7 years of expertise. He highlighted the fact that my experiences were unique to me, and that’s something I had to pass on to others.&lt;/p&gt;
+
+&lt;p&gt;The more I thought about it the more I realized I did have a lot to offer others. My expertise lied in my own experiences of:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Graduating with a degree in print design during a time when print was dying.&lt;/li&gt;
+&lt;li&gt;Teaching myself design for the web.&lt;/li&gt;
+&lt;li&gt;Landing my first job at an interactive agency designing massive touch-screen based games before the iPhone was a thing.&lt;/li&gt;
+&lt;li&gt;Learning about UI and UX design on the job.&lt;/li&gt;
+&lt;li&gt;Teaching myself to code.&lt;/li&gt;
+&lt;li&gt;Leaving my first job to run my own business successfully for a few years.&lt;/li&gt;
+&lt;li&gt;Leading design at a cutting-edge startup working with the music industry.&lt;/li&gt;
+&lt;li&gt;Working at one of the top dev &amp;amp; design shops in the world.&lt;/li&gt;
+&lt;li&gt;Helping hire designers at said dev &amp;amp; design shop.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Looking back that’s a lot of unique experiences that people could learn from.&lt;/p&gt;
+
+&lt;h2&gt;Teaching Others&lt;/h2&gt;
+
+&lt;p&gt;Fast forward to today, well a week ago. I was a guest speaker at Metropolitan State University of Denver. I went into it excited, scared, and worried I wasn’t going to offer anything new to these students. I kept thinking back to what Christopher said and remembered my 7 years of experience was 7 years more than any of them had.&lt;/p&gt;
+
+&lt;p&gt;My talk went beyond the subject imposed on me, Native App Design. I was able to give them insight into how I moved from print to interactive design, how I got my first job, my process, thoughtbot’s process, challenges I’ve had with clients, how I hire people today, what employers look for, and so much more. &lt;/p&gt;
+
+&lt;p&gt;Afterwards I was told I had more questions asked of me than any other speaker. I’ve even had follow up emails with more questions from some students. Overall I’d consider it a success.&lt;/p&gt;
+
+&lt;h2&gt;Everyone has something they can teach others&lt;/h2&gt;
+
+&lt;p&gt;Looking back on my presentation, and recent successes blogging about design, I realized &lt;em&gt;everyone has something they can teach others&lt;/em&gt;. Your experiences and knowledge are something only you have. While you might not feel like an expert, your experiences alone are something unique you can offer up to others. Most likely you’ve learned from those experiences, so why not teach that? Even if you only impact a small group of people, you still taught someone, you paid it forward, and you helped them learn something new.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>From Concept to Code - Built in 12 Hours</title>
     <link rel="alternate" href="http://blog.url.com/journal/Built-in-12-Hours/"/>
