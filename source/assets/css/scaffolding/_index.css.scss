@@ -23,7 +23,7 @@ body {
 }
 
 .page-header {
-  @include animation(slideDown .7s forwards);
+  @include animation(slideDown .5s forwards);
   background-color: $im-purple;
 
   .wrap {
@@ -32,13 +32,18 @@ body {
     position: relative;
 
     @include media($medium-screen-up) {
-      padding-bottom: em(180);
-      padding-top: em(180);
+      padding-bottom: em(120);
+      padding-top: em(120);
+    }
+
+    @include media($large-screen-up) {
+      padding-bottom: em(240);
+      padding-top: em(240);
     }
   }
 
   h2 {
-    @include animation(slideRight .7s .35s backwards);
+    @include animation(slideRight .5s .25s backwards);
     color: rgba(black, .4);
     font-family: $header-font-family;
     font-weight: bold;
@@ -47,7 +52,7 @@ body {
   }
 
   p {
-    @include animation(slideRight .7s .35s backwards);
+    @include animation(slideRight .5s .25s backwards);
     color: white;
     font-family: $base-font-family;
     font-size: $base-font-size * 1.25;

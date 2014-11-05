@@ -1,5 +1,5 @@
 .main-header {
-  @include animation(slideDown 0.7s);
+  @include animation(slideDown 0.5s);
   @include size(100% em(60));
   background: $im-teal;
   color: white;

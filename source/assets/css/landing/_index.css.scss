@@ -11,10 +11,10 @@
 }
 
 .landing-content {
-  @include animation(slideUp .7s .7s backwards);
+  @include animation(slideUp .5s .5s backwards);
   padding: em(60) 0;
 
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     padding: em(120) 0;
   }
 }

@@ -28,6 +28,10 @@ $projects: (thoughtbot, nextbigsound, pilsnercohenparty);
   padding: em(60) 0;
   position: relative;
 
+  @include media($large-screen-up) {
+    padding: em(120) 0;
+  }
+
   h1 {
     color: white;
     font-size: em(36);
@@ -86,6 +90,10 @@ $projects: (thoughtbot, nextbigsound, pilsnercohenparty);
 
   p:last-child {
     margin-bottom: 0;
+  }
+
+  @include media($medium-screen-up) {
+    padding: em(120) 0;
   }
 
   @include media($large-screen-up) {
