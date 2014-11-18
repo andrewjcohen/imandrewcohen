@@ -1,20 +1,21 @@
 %button {
   -webkit-font-smoothing: antialiased;
-  @include size(auto em(35, 14));
+  @include size(auto em(40, 14));
   @include transition($animation-ease-out);
-  background-color: $almost-white;
+  background-color: $im-purple;
   border-bottom: none;
-  border-radius: $base-border-radius;
-  color: $im-purple;
+  border-radius: em(20, 14);
+  color: $almost-white;
   display: block;
   font-family: $sans-serif;
   font-size: $base-font-size * 0.875;
-  line-height: em(34, 14);
-  padding: 0 em(15);
+  line-height: em(40, 14);
+  padding: 0 em(20, 14);
   text-transform: uppercase;
 
   &:hover {
     border-bottom: none;
+    color: $almost-white;
     box-shadow: $shadow-2;
   }
 }

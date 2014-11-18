@@ -1,11 +1,24 @@
-$projects: (thoughtbot, nextbigsound, pilsnercohenparty);
+$projects: (martialcodex, realtor, village, thoughtbot, nextbigsound, pilsnercohenparty);
 
 @each $project in $projects {
   .#{$project} {
+    @include animation(slideDown .5s forwards);
     color: white;
 
     .wrap {
       position: relative;
+    }
+
+    @if $project == 'martialcodex' {
+      background-color: $mc-black;
+    }
+
+    @if $project == 'realtor' {
+      background-color: $realtor-green;
+    }
+
+    @if $project == 'village' {
+      background-color: $village-green;
     }
 
     @if $project == 'thoughtbot' {
@@ -22,25 +35,38 @@ $projects: (thoughtbot, nextbigsound, pilsnercohenparty);
   }
 }
 
-.header-content {
-  @include span-columns(12);
-  text-align: center;
-  padding: em(60) 0;
-  position: relative;
+.work-header {
+  @extend .page-header;
 
-  @include media($large-screen-up) {
-    padding: em(120) 0;
+  h2 {
+    margin-bottom: $base-y;
   }
 
-  h1 {
-    color: white;
-    font-size: em(36);
-    text-transform: uppercase;
+  p {
+    @include animation(slideRight .5s .25s backwards);
+
+    font-size: $base-font-size * 1.125;
+    line-height: 1.5em;
+    margin-bottom: 0;
 
     @include media($medium-screen-up) {
-      font-size: em(48);
+      @include span-columns(6 of 8);
+      @include shift(1);
+      font-size: $base-font-size * 1.25;
+    }
+
+    @include media($large-screen-up) {
+      @include span-columns(8 of 12);
+      @include shift(2);
+      font-size: $base-font-size * 1.5;
     }
   }
+}
+
+.work-nav {
+  @include clearfix;
+  @include fill-parent;
+  @include position(absolute, $base-y 0px null 0px);
 }
 
 .project-nav {
@@ -65,41 +91,14 @@ $projects: (thoughtbot, nextbigsound, pilsnercohenparty);
   }
 }
 
-.next {
-  @extend .project-nav;
-  @include position(absolute, auto 0px $base-y auto);
-
-  @include media($large-screen-up) {
-    bottom: 50%;
-  }
-}
-
 .prev {
   @extend .project-nav;
-  @include position(absolute, auto auto $base-y 0px);
-
-  @include media($large-screen-up) {
-    bottom: 50%;
-  }
+  float: left;
 }
 
-.copy {
-  @include clearfix;
-  @include fill-parent;
-  padding: em(60) 0;
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-
-  @include media($medium-screen-up) {
-    padding: em(120) 0;
-  }
-
-  @include media($large-screen-up) {
-    @include span-columns(8);
-    @include shift(2);
-  }
+.next {
+  @extend .project-nav;
+  float: right;
 }
 
 .image-wrap {

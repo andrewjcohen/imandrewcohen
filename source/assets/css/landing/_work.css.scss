@@ -3,27 +3,43 @@
   background-color: white;
   padding: em(60) 0;
 
-  @include media($medium-screen-up) {
-    padding: em(120) 0;
+  @include media($large-screen-up) {
+    padding: em(90) 0;
   }
 }
 
 .work-header {
   @include clearfix;
   @include fill-parent;
-  margin-bottom: $base-y * 1.5;
+  margin-bottom: em(60);
+
+  @include media($large-screen-up) {
+    margin-bottom: em(90);
+  }
 
   h3 {
-    float: left;
+    display: block;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.work-footer {
+  @include clearfix;
+  @include fill-parent;
+  clear: both;
+  padding-top: em(36);
+  text-align: center;
+
+  @include media($large-screen-up) {
+    padding-top: em(42);
   }
 
   a {
     @extend button;
-    display: none;
 
     @include media($medium-screen-up) {
       display: inline-block;
-      float: right;
     }
   }
 }
@@ -35,10 +51,6 @@
   height: em(300);
   padding: 0;
   margin-bottom: $base-y;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
 
   &:hover {
     box-shadow: $shadow-2;
@@ -53,11 +65,15 @@
   }
 
   @include media($medium-screen-up) {
-    @include span-columns(2.6 of 8);
+    @include span-columns(4 of 8);
+    @include omega(2n);
+    margin-bottom: $base-y * 2;
   }
 
   @include media($large-screen-up) {
     @include span-columns(4 of 12);
+    @include omega-reset(2n);
+    @include omega(3n);
   }
 
   a {
@@ -94,5 +110,20 @@
 
 #pcp {
   background: image-url('landing/landing-pcp.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#village {
+  background: image-url('landing/landing-village.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#realtor {
+  background: image-url('landing/landing-realtor.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#martialcodex {
+  background: image-url('landing/landing-martialcodex.jpg') no-repeat center;
   background-size: cover;
 }
