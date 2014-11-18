@@ -35,47 +35,37 @@ $projects: (martialcodex, realtor, village, thoughtbot, nextbigsound, pilsnercoh
   }
 }
 
-.work-header {
-  @extend .page-header;
+.header-content {
+  @include span-columns(12);
+  text-align: center;
+  padding: em(60) 0;
+  position: relative;
 
-  h2 {
-    margin-bottom: $base-y;
+  @include media($large-screen-up) {
+    padding: em(90) 0;
   }
 
-  p {
-    @include animation(slideRight .5s .25s backwards);
-
-    font-size: $base-font-size * 1.125;
-    line-height: 1.5em;
-    margin-bottom: 0;
+  h1 {
+    color: white;
+    font-size: em(36);
+    text-transform: uppercase;
 
     @include media($medium-screen-up) {
-      @include span-columns(6 of 8);
-      @include shift(1);
-      font-size: $base-font-size * 1.25;
-    }
-
-    @include media($large-screen-up) {
-      @include span-columns(8 of 12);
-      @include shift(2);
-      font-size: $base-font-size * 1.5;
+      font-size: em(48);
     }
   }
-}
-
-.work-nav {
-  @include clearfix;
-  @include fill-parent;
-  @include position(absolute, $base-y 0px null 0px);
 }
 
 .project-nav {
+  @include position(absolute, 50% null null null);
   @include transition(all linear 0.2s);
   border-bottom: none;
   color: white;
+  display: none;
   font-size: em(12);
   font-weight: bold;
   font-family: $header-font-family;
+  margin-top: -1em;
   text-transform: uppercase;
   opacity: 0.5;
 
@@ -89,23 +79,71 @@ $projects: (martialcodex, realtor, village, thoughtbot, nextbigsound, pilsnercoh
     color: white;
     opacity: 1.0;
   }
+
+  @include media($medium-screen-up) {
+    display: inline-block;
+  }
 }
 
 .prev {
   @extend .project-nav;
-  float: left;
+  left: flex-gutter(4);
+
+  @include media($medium-screen-up) {
+    left: flex-gutter(8);
+  }
+
+  @include media($large-screen-up) {
+    left: flex-gutter(12);
+  }
 }
 
 .next {
   @extend .project-nav;
-  float: right;
+  right: flex-gutter(4);
+
+  @include media($medium-screen-up) {
+    right: flex-gutter(8);
+  }
+
+  @include media($large-screen-up) {
+    right: flex-gutter(12);
+  }
+}
+
+.copy {
+  @include clearfix;
+  @include fill-parent;
+  padding: em(60) 0;
+
+  p {
+    @include media($medium-screen-up) {
+      font-size: $base-font-size * 1.25;
+      line-height: 1.5em;
+    }
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media($medium-screen-up) {
+    @include span-columns(6);
+    @include shift(1);
+    padding: em(90) 0;
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(8);
+    @include shift(2);
+  }
 }
 
 .image-wrap {
   @include fill-parent;
   @include clearfix;
   clear: both;
-  margin-bottom: $base-y * 2;
+  margin-bottom: em(60);
   overflow: hidden;
   text-align: center;
 
@@ -113,8 +151,8 @@ $projects: (martialcodex, realtor, village, thoughtbot, nextbigsound, pilsnercoh
     max-width: 100%;
   }
 
-  @include media($medium-screen-up) {
-    margin-bottom: $base-y * 4;
+  @include media($large-screen-up) {
+    margin-bottom: em(90);
   }
 }
 

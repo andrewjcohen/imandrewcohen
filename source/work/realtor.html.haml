@@ -4,8 +4,9 @@ title: Realtor.com Profiles – I'm Andrew Cohen
 
 %header.realtor
   .wrap
-    %em Design &amp; Front-end Dev
-    %h1 Realtor.com
+    .header-content
+      %em UX/UI Design, Front-end Development
+      %h1 Realtor.com
     %a{href:'/work/nextbigsound', class: 'prev'}
       %i.icon-lefttwo
       Next Big Sound
@@ -13,13 +14,13 @@ title: Realtor.com Profiles – I'm Andrew Cohen
       Martial Codex
       %i.icon-righttwo
 
+%section.project-content
+  .wrap
+    .copy
+      %p Realtor.com Labs hired thoughtbot Denver to bring a fresh approach to their agent profiles. I led design on of an all new profile experience that focused on showcasing a wide-array of data surrounding agents.
 
-.wrap
-  %section.copy
-    %p Realtor.com Labs hired thoughtbot to bring a fresh approach to agent profiles. They have been reimagined to put their image and activity in the market first and foremost. Our Denver team designed and built an Angular.js app from the ground up.
+    .image-wrap
+      = image_tag 'work/realtor-landing.jpg'
 
-  .image-wrap
-    = image_tag 'work/realtor-landing.jpg'
-
-  .image-wrap
-    = image_tag 'work/realtor-profile.png'
+    .image-wrap
+      = image_tag 'work/realtor-profile.png'
